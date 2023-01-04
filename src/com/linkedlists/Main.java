@@ -11,8 +11,9 @@ public class Main {
         ll.addData(70);
         ll.addFirst(100);
         ll.append(45);
+        ll.addData(1);
         ll.display();
-        ll.addAfter(45,30);
+        ll.deleteFirst();
         ll.display();
     }
 }

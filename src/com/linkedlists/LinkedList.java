@@ -55,6 +55,13 @@ public class LinkedList {
         newNode.next = tempNode.next;
         tempNode.next=newNode;
     }
+
+    /* Deleting node */
+    public void deleteFirst(){
+        head = head.next;
+    }
+
+
     /* Displaying Linkedlist */
     public void display(){
         Node tempNode = head;
