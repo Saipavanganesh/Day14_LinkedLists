@@ -11,6 +11,7 @@ public class Main {
         ll.addData(30);
         ll.addData(70);
         ll.display();
-        ll.search(30);
+        ll.insertAfter(30,40);
+        ll.display();
     }
 }

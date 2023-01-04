@@ -98,6 +98,11 @@ public class LinkedList {
         }
     }
 
+    /* Insert After */
+    public void insertAfter(int prevData, int newData){
+        addAfter(prevData,newData);
+    }
+
     /* Displaying Linkedlist */
     public void display(){
         Node tempNode = head;
