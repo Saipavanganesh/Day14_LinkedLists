@@ -8,8 +8,11 @@ public class Main {
         System.out.println();
         LinkedList ll = new LinkedList();
         ll.addData(56);
-        ll.append(30);
-        ll.append(70);
+        ll.addData(70);
+        ll.addFirst(100);
+        ll.append(45);
+        ll.display();
+        ll.addAfter(45,30);
         ll.display();
     }
 }
