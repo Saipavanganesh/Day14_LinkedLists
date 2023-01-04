@@ -8,12 +8,9 @@ public class Main {
         System.out.println();
         LinkedList ll = new LinkedList();
         ll.addData(56);
+        ll.addData(30);
         ll.addData(70);
-        ll.addFirst(100);
-        ll.append(45);
-        ll.addData(1);
         ll.display();
-        ll.deleteLast();
-        ll.display();
+        ll.search(30);
     }
 }

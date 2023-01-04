@@ -82,6 +82,21 @@ public class LinkedList {
          tempNode1.next = null;
     }
 
+    /* Searching for a node */
+    public void search(int data){
+        Node tempNode = head;
+        int position = 0;
+        while(tempNode.next != null){
+            position++;
+            if(tempNode.data == data){
+                System.out.println( " Position of " + data + " is " + position);
+                break;
+            }
+            else{
+                tempNode = tempNode.next;
+            }
+        }
+    }
 
     /* Displaying Linkedlist */
     public void display(){
