@@ -1,5 +1,9 @@
 package com.linkedlists;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+
 public class LinkedList {
     Node head;
     static int size=0;
@@ -118,6 +122,25 @@ public class LinkedList {
             }
         }
     }
+
+    /* Sorted Linked List */
+    public void sortedLinkedList(){
+        ArrayList<Integer> sortedList = new ArrayList<Integer>();
+        Node temp = head;
+        while(temp.next != null){
+            sortedList.add(temp.data);
+            temp = temp.next;
+        }
+        sortedList.add(temp.data);
+        Collections.sort(sortedList);
+        for( int i=0; i< sortedList.size(); i++){
+            deleteFirst();
+            addData(sortedList.get(i));
+        }
+        display();
+    }
+
+
 
     /* Displaying size of Linked list */
     public void size(){
