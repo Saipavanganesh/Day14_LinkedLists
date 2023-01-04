@@ -9,7 +9,7 @@ public class LinkedList {
         Node node = new Node();
         node.data = data;
         node.next = null;
-        size++;
+
 
         if(head == null){
             head = node;
@@ -28,7 +28,7 @@ public class LinkedList {
         Node node = new Node();
         node.data = data;
         node.next = null;
-        size++;
+
 
         if(head == null){
             head = node;
@@ -103,7 +103,35 @@ public class LinkedList {
         addAfter(prevData,newData);
     }
 
-    /* Displaying Linkedlist */
+    /* Delete node */
+    public void delete(int data){
+        Node temp1 = head;
+        Node temp2 = head.next;
+        while(temp2 != null){
+            if(temp2.data == data){
+                temp2 = temp2.next;
+                temp1.next = temp2;
+            }
+            else{
+                temp1 = temp1.next;
+                temp2 = temp2.next;
+            }
+        }
+    }
+
+    /* Displaying size of Linked list */
+    public void size(){
+        int size = 1;
+        Node temp = head;
+        while(temp.next != null){
+            size++;
+            temp = temp.next;
+        }
+        System.out.println("Linked List size is " + size);
+    }
+
+
+    /* Displaying Linked list */
     public void display(){
         Node tempNode = head;
         while (tempNode != null){

@@ -10,8 +10,10 @@ public class Main {
         ll.addData(56);
         ll.addData(30);
         ll.addData(70);
-        ll.display();
         ll.insertAfter(30,40);
         ll.display();
+        ll.delete(40);
+        ll.display();
+        ll.size();
     }
 }
