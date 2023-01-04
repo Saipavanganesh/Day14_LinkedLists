@@ -56,9 +56,30 @@ public class LinkedList {
         tempNode.next=newNode;
     }
 
-    /* Deleting node */
+    /* Deleting first node */
     public void deleteFirst(){
+        if(head == null){
+            System.out.println("Linked List is empty");
+        }
         head = head.next;
+    }
+
+    /* Deleting last node */
+    public void deleteLast(){
+        if(head == null){
+            System.out.println("Linked List is empty");
+        }
+        if(head.next == null){
+            head = null;
+        }
+        Node tempNode1 = head;
+        Node tempNode2 = head.next;
+
+         while(tempNode2.next != null){
+             tempNode1 = tempNode1.next;
+             tempNode2 = tempNode2.next;
+         }
+         tempNode1.next = null;
     }
 
 

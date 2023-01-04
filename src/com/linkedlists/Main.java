@@ -13,7 +13,7 @@ public class Main {
         ll.append(45);
         ll.addData(1);
         ll.display();
-        ll.deleteFirst();
+        ll.deleteLast();
         ll.display();
     }
 }
