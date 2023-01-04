@@ -7,9 +7,9 @@ public class Main {
         System.out.println("***********************");
         System.out.println();
         LinkedList ll = new LinkedList();
-        ll.addData(70);
-        ll.addFirst(30);
-        ll.addFirst(56);
+        ll.addData(56);
+        ll.append(30);
+        ll.append(70);
         ll.display();
     }
 }

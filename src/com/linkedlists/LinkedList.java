@@ -37,6 +37,9 @@ public class LinkedList {
         }
     }
 
+    public void append(int data){
+        addData(data);
+    }
     /* Displaying Linkedlist */
     public void display(){
         Node tempNode = head;
